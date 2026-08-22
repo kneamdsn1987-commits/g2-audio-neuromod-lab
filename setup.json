@@ -1,0 +1,38 @@
+{
+  "project": "g2-audio-neuromod-lab",
+  "mode": "dry-run",
+  "synthesis": {
+    "type": "binaural-isochronic",
+    "parameters": {
+      "carrier_frequency_hz": 440,
+      "modulation_frequency_hz": 40,
+      "duration_seconds": 60,
+      "amplitude": 0.8
+    }
+  },
+  "effects": {
+    "zoom_g2nu_style": true,
+    "edison": {
+      "enabled": true,
+      "settings": {}
+    },
+    "parametric_eq2": {
+      "enabled": true,
+      "bands": []
+    }
+  },
+  "midi": {
+    "cc_mapping_enabled": true,
+    "controllers": []
+  },
+  "hud": {
+    "in_ear_display": false,
+    "telemetry": true
+  },
+  "safety": {
+    "hardware_output_enabled": false,
+    "current_limit_ma": 0,
+    "intensity_limit_percent": 0,
+    "emergency_stop": true
+  }
+}
